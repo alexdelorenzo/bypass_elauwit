@@ -1,4 +1,4 @@
-# auto_elauwit
+# bypass_elauwit
 
 Bypass Elauwit's captive portal. It's really annoying, so here's my quickly hacked up solution.
 

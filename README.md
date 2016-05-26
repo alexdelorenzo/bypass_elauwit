@@ -9,6 +9,8 @@ This is easily fixed as the MAC address is returned to you as a URL parameter wh
 
 Supply your MAC at runtime through STDIN
 
-On Mac OS X
+### General
+`echo "XX:XX:XX:XX:XX:XX" | python3 bypass_portal.py`
 
+### Mac OS X
 `ifconfig en0 | grep ether | sed 's/.*ether \(.*\) $/\1/' | python3 bypass_portal.py`

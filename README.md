@@ -7,7 +7,7 @@ AP MAC is currently hardcoded, so this script isn't ready to be used without han
 
 This is easily fixed as the MAC address is returned to you as a URL parameter when you are redirected to Elauwit's portal.
 
-Supply your MAC at runtime through STDIN
+Supply your local MAC at runtime through STDIN
 
 ### General
 `echo "XX:XX:XX:XX:XX:XX" | python3 bypass_portal.py`

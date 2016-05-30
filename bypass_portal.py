@@ -10,7 +10,7 @@ PORT = 443
 #thanks SO
 def get_ip_address(accessible_domain: str=ACCESSIBLE_DOMAIN, port: int=PORT):
     s = socket.socket(socket.AF_INET, socket.SOCK_DGRAM)
-    s.connect((accessible_domain, 80))
+    s.connect((accessible_domain, port))
 
     return s.getsockname()[0]
 
@@ -56,7 +56,7 @@ def is_success(request: Request) -> bool:
 
 	else:
 		print("Request failed.")
-		print(request.status_code, r.content)
+		print(request.status_code, request.content)
 		exit(1)
 
 
